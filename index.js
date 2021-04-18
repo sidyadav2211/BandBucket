@@ -11,11 +11,11 @@ let head = new Vue({
     el:'#appHead',
     data:{
         productList:[
-            {id:1,url:"Images/index.jpeg", title:' Gramin 943 for runner', MRP:500,price:200},
-            {id:2,url:"Images/watch1.jpeg",title:' Gramin 943 for runner',MRP:500,price:300},
-            {id:3,url:"Images/watch2.jpeg",title:' Gramin 943 for runner',MRP:500,price:400},
-            {id:4,url:"Images/watch3.jpeg",title:' Gramin 943 for runner',MRP:500,price:500},
-            {id:5,url:"Images/watch4.jpeg",title:' Gramin 943 for runner',MRP:500,price:500},
+            {id:1,url:"Watches/Images/index.jpeg", title:' Gramin 943 for runner', MRP:500,price:200},
+            {id:2,url:"Watches/Images/watch1.jpeg",title:' Gramin 943 for runner',MRP:500,price:300},
+            {id:3,url:"Watches/Images/watch2.jpeg",title:' Gramin 943 for runner',MRP:500,price:400},
+            {id:4,url:"Watches/Images/watch3.jpeg",title:' Gramin 943 for runner',MRP:500,price:500},
+            {id:5,url:"Watches/Images/watch4.jpeg",title:' Gramin 943 for runner',MRP:500,price:500},
         ]
     }
 })

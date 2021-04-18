@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches</title>
+     <!-- cdn Vue -->
+     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+     <!-- Bulma cdn -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div id="appHead">
+                <div class="card" v-for="product in productList"  v-bind:key="product.id">
+                    <!-- <div class="card-image">
+                        <figure class="image is-128by128">
+                            <img src="index.jpeg" alt="pro1">
+                        </figure>
+                    </div> -->
+                    <div class="card-content">
+                     <div class="media">
+                         <div class="media-left">
+                             <figure class="image is-128X128">
+                                 <img v-bind:src="product.url">
+                             </figure>
+         
+         
+                             <!-- <p class="title is-3">Price:222</p> -->
+                         </div>
+                         <div class="media-content">
+                             <p class="title is-3">{{product.title}}</p>
+                             <p class="title is-5">MRP: <strong>{{product.MRP}}</strong></p>
+                             <p class="subtitle is-5">Discount: <strong>10%</strong> </p>
+                             <p class="title is-5">Price: <strong>{{product.price}}</strong></p>
+                             <p class="subtitle is-5">Description: Best watch for runner </p>
+                         </div>
+                     </div>
+                     <!-- <div class="content">
+                         <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi itaque quos quo fugit nemo odio quasi culpa consectetur? Perferendis molestiae animi repudiandae aliquam, iusto optio voluptatibus
+                              aut ratione. Distinctio, repellat.</span>
+                     </div> -->
+                     <footer class="card-footer">
+                         <a href="contact.html"  class="card-footer">Contact to Dealer</a>
+                     </footer>
+                    </div>
+                </div>
+            </section>
+            </div>
+            <!-- <div class="card-image">
+                    <figure class="image is-128by128">
+                        <img src="index.jpeg" alt="pro1">
+                    </figure>
+                </div> -->
+            <!-- <div class="card">
+                
+                <div class="card-content">
+                 <div class="media">
+                     <div class="media-left">
+                         <figure class="image is-128X128">
+                             <img src="index.jpeg" alt="product1">
+                         </figure>
+     
+     
+                         <-- <p class="title is-3">Price:222</p> -->
+                     <!-- </div>
+                     <div class="media-content">
+                         <p class="title is-4">New Garmin Watch for Men's </p>
+                         <p class="title is-6">Price: <strong>3000</strong></p>
+                         <p class="subtitle is-5">Description: Best watch for runner </p>
+                     </div>
+                 </div> -->
+                 <!-- <div class="content">
+                     <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi itaque quos quo fugit nemo odio quasi culpa consectetur? Perferendis molestiae animi repudiandae aliquam, iusto optio voluptatibus
+                          aut ratione. Distinctio, repellat.</span>
+                 </div> -->
+                 <!-- <footer class="card-footer">
+                     <a href="contact.html"  class="card-footer">Contact to Dealer</a>
+                 </footer>
+                </div>
+            </div> --> 
+        </section>
+        </div>
+        
+    <script src="index.js"></script>
+</body>
+</html>

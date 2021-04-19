@@ -15,21 +15,21 @@
         <div class="container">
             <div id="appHead">
                 <div class="card" v-for="product in productList"  v-bind:key="product.id">
-                    <!-- <div class="card-image">
-                        <figure class="image is-128by128">
-                            <img src="index.jpeg" alt="pro1">
+                    <div class="card-image">
+                        <figure class="image is-128x128">
+                            <img v-bind:src="product.url" alt="pro1">
                         </figure>
-                    </div> -->
-                    <div class="card-content">
-                     <div class="media">
+                    </div>
+                     <div class="card-content">
+                     <!-- <div class="media">
                          <div class="media-left">
                              <figure class="image is-128X128">
                                  <img v-bind:src="product.url">
-                             </figure>
-         
+                             </figure>  -->
+          
          
                              <!-- <p class="title is-3">Price:222</p> -->
-                         </div>
+                         <!-- </div> -->
                          <div class="media-content">
                              <p class="title is-3">{{product.title}}</p>
                              <p class="title is-5">MRP: <strong>{{product.MRP}}</strong></p>
